@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+categories = ['Tools', 'Plants', 'Dirt', 'Seeds']
+
+categories.each do |c|
+    Category.create(name: c)
+end
+
+Item.all.each do |i|
+    i.update(category: Category.all.sample(1)[0])
+end
