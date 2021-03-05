@@ -14,11 +14,11 @@
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                 <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                <a href="#" class="border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  New Item
+                <a href="#" id="items-nav" class="border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Items
                 </a>
-                <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  New Category
+                <a href="#" id="categories-nav" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Categories
                 </a>
               </div>
             </div>
@@ -48,16 +48,16 @@
         <div class="space-y-6 lg:col-start-1 lg:col-span-2">
           <section aria-labelledby="timeline-title" class="lg:col-start-3 lg:col-span-1">
             <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:px-6">
-              <h2 id="timeline-title" class="text-lg font-medium text-gray-900">Items</h2>
+              <h2 id="main-list-title" class="text-lg font-medium text-gray-900"></h2>
               <div>
-                <ul class="divide-y divide-gray-200" id="items-list">
+                <ul class="divide-y divide-gray-200" id="main-list">
                 </ul>
               </div>
              
             </div>
           </section>
   
-          <section aria-labelledby="notes-title">
+          <section>
             <div>
               <div class="md:grid md:grid-cols-4 md:gap-6">
                 <div class="mt-5 md:mt-0 md:col-span-2">
@@ -191,7 +191,7 @@
         
         <section aria-labelledby="applicant-information-title">
             <div class="bg-white shadow sm:rounded-lg">
-              <div class="px-4 py-5 sm:px-6">
+              <div class="px-4 py-5 sm:px-6" id="item-detail">
                 <h2 id="applicant-information-title" class="text-lg leading-6 font-medium text-gray-900">
                   Details
                 </h2>
@@ -207,5 +207,6 @@
   
     <script src="src/index.js"></script>
     <script src="src/item.js"></script>
+    <script src="src/category.js"></script>
 </body>
 </html>
