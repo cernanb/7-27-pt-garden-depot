@@ -1,8 +1,8 @@
 class Item < ApplicationRecord
-    belongs_to :category
+    belongs_to :category, optional: true
 
 
     def category_name
-        self.category.name
+        self.category ? self.category.name : "Not assigned" 
     end
 end
